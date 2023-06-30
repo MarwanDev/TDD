@@ -34,12 +34,12 @@ describe Solver do
     end
     it 'returns the factorial of a given number' do
       solver = Solver.new
-      expect solver.factorial(1).should eq 1
-      expect solver.factorial(3).should eq 6
-      expect solver.factorial(5).should eq 120
-      expect solver.factorial(7).should eq 5040
-      expect solver.factorial(10).should eq 3_628_800
-      expect solver.factorial(0).should eq 1
+      expect(solver.factorial(1)).to eq 1
+      expect(solver.factorial(3)).to eq 6
+      expect(solver.factorial(5)).to eq 120
+      expect(solver.factorial(7)).to eq 5040
+      expect(solver.factorial(10)).to eq 3_628_800
+      expect(solver.factorial(0)).to eq 1
     end
   end
 end
