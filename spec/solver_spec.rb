@@ -14,6 +14,10 @@ describe Solver do
       solver = Solver.new
       expect(solver.fizzbuzz(75)).to eq 'fizzbuzz'
     end
+    it 'returns number as string if N not divisible divisible by any' do
+      solver = Solver.new
+      expect(solver.fizzbuzz(4)).to eq '4'
+    end
   end
 
   describe '#reverse' do
